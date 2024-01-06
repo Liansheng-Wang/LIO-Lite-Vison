@@ -10,17 +10,21 @@ The URL of the code: [SensorCalibration](https://github.com/Liansheng-Wang/Senso
 ## Data acquisition equipment
 Camera: D455, Lidar:  Mid-360  
 
-<p float="center">
+<div style="width: 1000px; margin: auto;">
 
-  <img src="./doc/p2.png" height="300" style="margin-right: 60px;"/>  
+  <!-- 数据采集设备的图片 -->
+  <p align="center">
+    <img src="./doc/p2.png" width="300" style="margin-right: 10px;"/>  
+    <img src="./doc/p1.png" width="300" style="margin-right: 10px;"/>
+    <img src="./doc/p3.png" width="300"/>  
+  </p>
 
-  <img src="./doc/p1.png" height="300" style="margin-right: 60px;"/>
-
-  <img src="./doc/p3.png" height="300"/>  
-</p>
+</div>
 
 
 ## experimental results
+
+<div style="width: 1000px; margin: auto;">
 
 <!-- 第一行，两张正方形图片 -->
 <p align="center">
@@ -43,4 +47,6 @@ Camera: D455, Lidar:  Mid-360
 <p align="center">
   <img src="./doc/e6.png" wight="600" />
 </p>
+
+</div>
 
