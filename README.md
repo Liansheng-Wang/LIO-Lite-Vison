@@ -1,74 +1,43 @@
-# LIO-Lite
-A lightweight LIO (Lidar Odometry) system was deployed on a UAV utilizing the Livox Mid-360 sensor.  
-* The project incorporates incremental refinements to the existing [faster-lio](https://github.com/gaoxiang12/faster-lio.git) framework.  
-* Add location node.
+# LVIO-Lite
 
-## classification
-This project has several different branches. The optimize the based branch, using graph optimization. Testing on the X86 is OK, but the processing speed on the Nvidia NX is very low.  
-ESKF based performs well on Nvidia NX.
+Based on the [LIO-Lite](https://github.com/Liansheng-Wang/LIO-Lite.git) project, visual rendering has been added
 
-## Illustrate
-c++ == 17
-The project is developed using C++17 standard.  
-
-## Dependence
-
-1. ROS (melodic or noetic)
-2. glog: ```sudo apt-get install libgoogle-glog-dev```
-3. eigen: ```sudo apt-get install libeigen3-dev```
-4. pcl: ```sudo apt-get install libpcl-dev```
-5. yaml-cpp: ```sudo apt-get install libyaml-cpp-dev```
+## Vision-Lidar Calibration
+Designed a camera-lidar calibration tool for checkerboard calibration board.
+The URL of the code: [SensorCalibration](https://github.com/Liansheng-Wang/SensorCalibration.git)
 
 
-## Build
-```
-  git clone https://github.com/Liansheng-Wang/LIO-Lite.git  
-  cd LIO-Lite  
-  catkin_make  
-```
+## Data acquisition equipment
+Camera: D455, Lidar:  Mid-360  
 
-## Run
-```
-  source devel/setup.zsh
-  roslaunch lvio_lite mapping_360.launch  
-```
-After rebuilding the map, you can follow the following command to load the map for relocation  
-```
-  roslaunch lvio_lite location_360.launch  
-```
+<p float="center">
+  <img src="./doc/p1.png" height="300" style="margin-right: 30px;"/>
 
-### note:
-If it is not at the starting point during the repositioning process, it needs to be manually repositioned in rviz  
-Or modify the parameters in in mid360_location.yaml:
-```
-  init_trans: [0, 0, 0]
-  init_rqy: [0, 0, 0]
-```
-
-## Reference
-* [FAST-LIO2](https://github.com/hku-mars/FAST_LIO.git)
-* [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM.git)
-* [faster-lio](https://github.com/gaoxiang12/faster-lio.git)
-* [slam_in_autonomous_driving](https://github.com/gaoxiang12/slam_in_autonomous_driving.git)
+  <img src="./doc/p2.png" height="300" /> 
+</p>
 
 
+## experimental results
 
-## UPDATE LOG:
-### 2023-10-17 
-Added map segmentation to avoid memory overload in large scenes and improve efficiency.   
-Incremental loading of the map can be selected in the case of relocation.   
+<!-- 第一行，两张正方形图片 -->
+<p align="center">
+  <img src="./doc/e1.png" height="300" style="margin-right: 10px;"/>
+  <img src="./doc/e2.png" height="300" />
+</p>
 
-#### Test:
-```
-rosrun lvio_lite test_split
-rosrun lvio_lite test_load 
-```
+<!-- 第二行，两张正方形图片 -->
+<p align="center">
+  <img src="./doc/e3.png" height="300" style="margin-right: 10px;"/>
+  <img src="./doc/e4.png" height="300" />
+</p>
 
-![SplitMap](https://github.com/Liansheng-Wang/LIO-Lite/blob/eskf-base/doc/split_map.png)
+<!-- 第三行，第一张长图 -->
+<p align="center">
+  <img src="./doc/e5.png" height="300" />
+</p>
 
-### 2023-11-22
-Added the use of gravity as a constraint to define the horizontal plane during the initialization phase.
+<!-- 第四行，第二张长图 -->
+<p align="center">
+  <img src="./doc/e6.png" height="300" />
+</p>
 
-### 2023-11-23
-Test HesaiXT-16 Lidar.
-![HesaiTX16](https://github.com/Liansheng-Wang/LIO-Lite/blob/eskf-base/doc/HesaiXT16.png)
