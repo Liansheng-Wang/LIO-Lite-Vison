@@ -9,43 +9,37 @@ The URL of the code: [SensorCalibration](https://github.com/Liansheng-Wang/Senso
 
 ## Data acquisition equipment
 Camera: D455, Lidar:  Mid-360  
-
-<div style="width: 800px; margin: auto;">
-
-  <!-- 数据采集设备的图片 -->
-  <p align="center">
-    <img src="./doc/p2.png" height="300" style="margin-right: 10px;"/>  
-    <img src="./doc/p1.png" height="300" style="margin-right: 10px;"/>
-    <img src="./doc/p3.png" height="300"/>  
-  </p>
-
-</div>
+<table  align="center">
+  <!-- 第一行和第二行，每行两张正方形图片 -->
+  <tr>
+    <td><img src="./doc/p2.png" height="300"/></td>
+    <td><img src="./doc/p1.png" height="300"/></td>
+    <td><img src="./doc/p3.png" height="300"/></td>
+  </tr>
+</table>
 
 
 ## experimental results
 
-<div style="width: 800px; margin: auto;">
+<!-- 使用表格来创建网格布局 -->
+<table align="center">
+  <!-- 第一行和第二行，每行两张正方形图片 -->
+  <tr>
+    <td><img src="./doc/e1.png" width="400" /></td>
+    <td><img src="./doc/e2.png" width="400" /></td>
+  </tr>
+  <tr>
+    <td><img src="./doc/e3.png" width="400" /></td>
+    <td><img src="./doc/e4.png" width="400" /></td>
+  </tr>
 
-<!-- 第一行，两张正方形图片 -->
-<p align="center">
-  <img src="./doc/e1.png" height="300" style="margin-right: 10px;"/>
-  <img src="./doc/e2.png" height="300" />
-</p>
+  <!-- 第三行，第一张长图 -->
+  <tr>
+    <td colspan="2"><img src="./doc/e5.png" width="820" /></td>
+  </tr>
 
-<!-- 第二行，两张正方形图片 -->
-<p align="center">
-  <img src="./doc/e3.png" height="300" style="margin-right: 10px;"/>
-  <img src="./doc/e4.png" height="300" />
-</p>
-
-<!-- 第三行，第一张长图 -->
-<p align="center">
-  <img src="./doc/e5.png"/>
-</p>
-
-<!-- 第四行，第二张长图 -->
-<p align="center">
-  <img src="./doc/e6.png"/>
-</p>
-
-</div>
+  <!-- 第四行，第二张长图 -->
+  <tr>
+    <td colspan="2"><img src="./doc/e6.png" width="820" /></td>
+  </tr>
+</table>
