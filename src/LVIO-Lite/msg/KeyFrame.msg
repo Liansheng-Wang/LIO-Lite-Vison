@@ -1,0 +1,4 @@
+std_msgs/Header header
+sensor_msgs/PointCloud2 cloud
+geometry_msgs/Vector3 position
+geometry_msgs/Quaternion quaternion
