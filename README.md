@@ -33,11 +33,11 @@ Camera: D455, Lidar:  Mid-360
 
 <!-- 第三行，第一张长图 -->
 <p align="center">
-  <img src="./doc/e5.png" wight="620" />
+  <img src="./doc/e5.png" wight="820" />
 </p>
 
 <!-- 第四行，第二张长图 -->
 <p align="center">
-  <img src="./doc/e6.png" wight="620" />
+  <img src="./doc/e6.png" wight="820" />
 </p>
 
