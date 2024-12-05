@@ -1,6 +1,6 @@
 # LVIO-Lite
 
-Based on the [LIO-Lite](https://github.com/Liansheng-Wang/LIO-Lite.git) project, visual rendering has been added
+Based on the [faster_lio_localization](https://github.com/Liansheng-Wang/faster_lio_localization) project, visual rendering has been added
 
 ## Vision-Lidar Calibration
 Designed a camera-lidar calibration tool for checkerboard calibration board.
